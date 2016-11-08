@@ -1,0 +1,54 @@
+.activesymbol-card
+  &__container
+    width: 7rem
+    max-width: 10rem
+    flex-grow: 1
+    font-size: 1rem
+    background: #F2F2F2
+    border: 1px solid #D9D9D9
+    padding: 0.5em 1em
+    margin: 1em 0.5em
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.2)
+    position: relative
+
+  &__text
+    text-align: center
+
+  &__symbol
+    font-size: 1em
+    color: #262626
+
+  &__fullname
+    font-size: 0.625em
+    color: #999999
+
+  &__colorball
+    height: 1em
+    width: 1em
+    border-radius: 50%
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%) translateY(50%)
+
+  &__delete
+    border: 1px solid #999999
+    background:
+      image: url('/public/images/delete-btn.png')
+      size: cover
+      repeat: no-repeat
+      color: #F2F2F2
+    cursor: pointer
+    height: 1em
+    width: 1em
+    border-radius: 50%
+    position: absolute
+    top: 0
+    right: 0
+    transform: translate3d(50%,-50%,0)
+    opacity: 0
+    transition: opacity 150ms ease-in-out
+
+.activesymbol-card__container:hover
+  .activesymbol-card__delete
+    opacity: 1

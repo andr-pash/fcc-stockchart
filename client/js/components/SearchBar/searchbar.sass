@@ -1,0 +1,22 @@
+.searchbar
+  &__container
+    display: flex
+    &::after
+      content: ''
+      display: block
+      height: 1em
+      width: 1em
+      background:
+        image: url('http://127.0.0.1:3000/public/images/magnifying-glass-icon.svg')
+        size: contain
+        repeat: no-repeat
+
+  &__input
+    background: transparent
+    border: none
+    border-radius: 0
+    border-bottom: 1px solid #F2F2F2
+    color: #F2F2F2
+    width: 100%
+    font-size: 1em
+    box-sizing: border-box
